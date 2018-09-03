@@ -45,6 +45,7 @@ public interface Swe_medium extends Medium, MixinBase {
 	 * @see #setOpenstackRuntimeId(String)
 	 * @see ossweruntime.OssweruntimePackage#getSwe_medium_OpenstackRuntimeId()
 	 * @model default="9ed5ac24-d1e7-4665-9c22-318561733f42" dataType="org.eclipse.cmf.occi.core.String" required="true"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://schemas.modmacao.org/openstack/swe/ecore!Swe_medium!openstackRuntimeId'"
 	 * @generated
 	 */
 	String getOpenstackRuntimeId();

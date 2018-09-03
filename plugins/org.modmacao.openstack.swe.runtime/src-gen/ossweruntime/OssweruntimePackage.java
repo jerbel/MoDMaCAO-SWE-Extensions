@@ -33,8 +33,6 @@ import org.eclipse.emf.ecore.EPackage;
  * <!-- end-user-doc -->
  * @see ossweruntime.OssweruntimeFactory
  * @model kind="package"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore invocationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot' settingDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot' validationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot'"
- *        annotation="http://www.eclipse.org/OCL/Import occi='http://schemas.ogf.org/occi/core/ecore' infrastructure='http://schemas.ogf.org/occi/infrastructure/ecore' crtp='http://schemas.ogf.org/occi/infrastructure/compute/template/1.1/ecore' modmacao='http://schemas.modmacao.org/modmacao/ecore' platform='http://schemas.modmacao.org/occi/platform/ecore' placement='http://schemas.modmacao.org/placement/ecore'"
  * @generated
  */
 public interface OssweruntimePackage extends EPackage {
@@ -747,6 +745,71 @@ public interface OssweruntimePackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link ossweruntime.impl.Ubuntu_bionicbeaver_pythonImpl <em>Ubuntu bionicbeaver python</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ossweruntime.impl.Ubuntu_bionicbeaver_pythonImpl
+	 * @see ossweruntime.impl.OssweruntimePackageImpl#getUbuntu_bionicbeaver_python()
+	 * @generated
+	 */
+	int UBUNTU_BIONICBEAVER_PYTHON = 8;
+
+	/**
+	 * The feature id for the '<em><b>Mixin</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UBUNTU_BIONICBEAVER_PYTHON__MIXIN = InfrastructurePackage.OS_TPL__MIXIN;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UBUNTU_BIONICBEAVER_PYTHON__ENTITY = InfrastructurePackage.OS_TPL__ENTITY;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UBUNTU_BIONICBEAVER_PYTHON__ATTRIBUTES = InfrastructurePackage.OS_TPL__ATTRIBUTES;
+
+	/**
+	 * The feature id for the '<em><b>Openstack Runtime Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UBUNTU_BIONICBEAVER_PYTHON__OPENSTACK_RUNTIME_ID = InfrastructurePackage.OS_TPL_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Ubuntu bionicbeaver python</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UBUNTU_BIONICBEAVER_PYTHON_FEATURE_COUNT = InfrastructurePackage.OS_TPL_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Ubuntu bionicbeaver python</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UBUNTU_BIONICBEAVER_PYTHON_OPERATION_COUNT = InfrastructurePackage.OS_TPL_OPERATION_COUNT + 0;
+
+
+	/**
 	 * Returns the meta object for class '{@link ossweruntime.Swe_small <em>Swe small</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -915,6 +978,27 @@ public interface OssweruntimePackage extends EPackage {
 	EAttribute getUbuntu_xenialxerus_OpenstackRuntimeId();
 
 	/**
+	 * Returns the meta object for class '{@link ossweruntime.Ubuntu_bionicbeaver_python <em>Ubuntu bionicbeaver python</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ubuntu bionicbeaver python</em>'.
+	 * @see ossweruntime.Ubuntu_bionicbeaver_python
+	 * @generated
+	 */
+	EClass getUbuntu_bionicbeaver_python();
+
+	/**
+	 * Returns the meta object for the attribute '{@link ossweruntime.Ubuntu_bionicbeaver_python#getOpenstackRuntimeId <em>Openstack Runtime Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Openstack Runtime Id</em>'.
+	 * @see ossweruntime.Ubuntu_bionicbeaver_python#getOpenstackRuntimeId()
+	 * @see #getUbuntu_bionicbeaver_python()
+	 * @generated
+	 */
+	EAttribute getUbuntu_bionicbeaver_python_OpenstackRuntimeId();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1080,6 +1164,24 @@ public interface OssweruntimePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute UBUNTU_XENIALXERUS__OPENSTACK_RUNTIME_ID = eINSTANCE.getUbuntu_xenialxerus_OpenstackRuntimeId();
+
+		/**
+		 * The meta object literal for the '{@link ossweruntime.impl.Ubuntu_bionicbeaver_pythonImpl <em>Ubuntu bionicbeaver python</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ossweruntime.impl.Ubuntu_bionicbeaver_pythonImpl
+		 * @see ossweruntime.impl.OssweruntimePackageImpl#getUbuntu_bionicbeaver_python()
+		 * @generated
+		 */
+		EClass UBUNTU_BIONICBEAVER_PYTHON = eINSTANCE.getUbuntu_bionicbeaver_python();
+
+		/**
+		 * The meta object literal for the '<em><b>Openstack Runtime Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UBUNTU_BIONICBEAVER_PYTHON__OPENSTACK_RUNTIME_ID = eINSTANCE.getUbuntu_bionicbeaver_python_OpenstackRuntimeId();
 
 	}
 

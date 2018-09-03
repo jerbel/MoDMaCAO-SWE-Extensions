@@ -104,6 +104,15 @@ public interface OssweruntimeFactory extends EFactory {
 	Ubuntu_xenialxerus createUbuntu_xenialxerus();
 
 	/**
+	 * Returns a new object of class '<em>Ubuntu bionicbeaver python</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ubuntu bionicbeaver python</em>'.
+	 * @generated
+	 */
+	Ubuntu_bionicbeaver_python createUbuntu_bionicbeaver_python();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

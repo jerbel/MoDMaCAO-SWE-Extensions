@@ -122,6 +122,10 @@ public class OssweruntimeAdapterFactory extends AdapterFactoryImpl {
 				return createUbuntu_xenialxerusAdapter();
 			}
 			@Override
+			public Adapter caseUbuntu_bionicbeaver_python(Ubuntu_bionicbeaver_python object) {
+				return createUbuntu_bionicbeaver_pythonAdapter();
+			}
+			@Override
 			public Adapter caseMixinBase(MixinBase object) {
 				return createMixinBaseAdapter();
 			}
@@ -286,6 +290,20 @@ public class OssweruntimeAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createUbuntu_xenialxerusAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ossweruntime.Ubuntu_bionicbeaver_python <em>Ubuntu bionicbeaver python</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ossweruntime.Ubuntu_bionicbeaver_python
+	 * @generated
+	 */
+	public Adapter createUbuntu_bionicbeaver_pythonAdapter() {
 		return null;
 	}
 

@@ -54,8 +54,7 @@
       <!-- @generated ossweruntime -->
       <package
             uri="http://schemas.modmacao.org/openstack/swe/ecore"
-            class="ossweruntime.OssweruntimePackage"
-            genModel="model/ossweruntime.genmodel"/>
+            class="ossweruntime.OssweruntimePackage"/>
    </extension>
 
 </plugin>

@@ -14,28 +14,28 @@ package ossweruntime;
 
 import org.eclipse.cmf.occi.core.MixinBase;
 
-import org.eclipse.cmf.occi.crtp.Mem_medium;
+import org.eclipse.cmf.occi.infrastructure.Os_tpl;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Swe mem medium</b></em>'.
+ * A representation of the model object '<em><b>Ubuntu bionicbeaver python</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link ossweruntime.Swe_mem_medium#getOpenstackRuntimeId <em>Openstack Runtime Id</em>}</li>
+ *   <li>{@link ossweruntime.Ubuntu_bionicbeaver_python#getOpenstackRuntimeId <em>Openstack Runtime Id</em>}</li>
  * </ul>
  *
- * @see ossweruntime.OssweruntimePackage#getSwe_mem_medium()
+ * @see ossweruntime.OssweruntimePackage#getUbuntu_bionicbeaver_python()
  * @model
  * @generated
  */
-public interface Swe_mem_medium extends Mem_medium, MixinBase {
+public interface Ubuntu_bionicbeaver_python extends Os_tpl, MixinBase {
 	/**
 	 * Returns the value of the '<em><b>Openstack Runtime Id</b></em>' attribute.
-	 * The default value is <code>"553402b5-e36c-47b4-b2bf-7ecc8be4a4b5"</code>.
+	 * The default value is <code>"e02f6965-0c9e-45e0-9a54-e2730bd05749"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -43,15 +43,15 @@ public interface Swe_mem_medium extends Mem_medium, MixinBase {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Openstack Runtime Id</em>' attribute.
 	 * @see #setOpenstackRuntimeId(String)
-	 * @see ossweruntime.OssweruntimePackage#getSwe_mem_medium_OpenstackRuntimeId()
-	 * @model default="553402b5-e36c-47b4-b2bf-7ecc8be4a4b5" dataType="org.eclipse.cmf.occi.core.String" required="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://schemas.modmacao.org/openstack/swe/ecore!Swe_mem_medium!openstackRuntimeId'"
+	 * @see ossweruntime.OssweruntimePackage#getUbuntu_bionicbeaver_python_OpenstackRuntimeId()
+	 * @model default="e02f6965-0c9e-45e0-9a54-e2730bd05749" dataType="org.eclipse.cmf.occi.core.String" required="true"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://schemas.modmacao.org/openstack/swe/ecore!Ubuntu_bionicbeaver_python!openstackRuntimeId'"
 	 * @generated
 	 */
 	String getOpenstackRuntimeId();
 
 	/**
-	 * Sets the value of the '{@link ossweruntime.Swe_mem_medium#getOpenstackRuntimeId <em>Openstack Runtime Id</em>}' attribute.
+	 * Sets the value of the '{@link ossweruntime.Ubuntu_bionicbeaver_python#getOpenstackRuntimeId <em>Openstack Runtime Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Openstack Runtime Id</em>' attribute.
@@ -60,4 +60,4 @@ public interface Swe_mem_medium extends Mem_medium, MixinBase {
 	 */
 	void setOpenstackRuntimeId(String value);
 
-} // Swe_mem_medium
+} // Ubuntu_bionicbeaver_python

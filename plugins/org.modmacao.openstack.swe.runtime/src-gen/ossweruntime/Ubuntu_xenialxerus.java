@@ -45,6 +45,7 @@ public interface Ubuntu_xenialxerus extends Os_tpl, MixinBase {
 	 * @see #setOpenstackRuntimeId(String)
 	 * @see ossweruntime.OssweruntimePackage#getUbuntu_xenialxerus_OpenstackRuntimeId()
 	 * @model default="5437eae8-7c47-4834-929c-a314de77d291" dataType="org.eclipse.cmf.occi.core.String" required="true"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://schemas.modmacao.org/openstack/swe/ecore!Ubuntu_xenialxerus!openstackRuntimeId'"
 	 * @generated
 	 */
 	String getOpenstackRuntimeId();

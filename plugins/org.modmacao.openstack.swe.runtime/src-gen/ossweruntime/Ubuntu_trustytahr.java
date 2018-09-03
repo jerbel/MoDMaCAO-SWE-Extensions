@@ -45,6 +45,7 @@ public interface Ubuntu_trustytahr extends Os_tpl, MixinBase {
 	 * @see #setOpenstackRuntimeId(String)
 	 * @see ossweruntime.OssweruntimePackage#getUbuntu_trustytahr_OpenstackRuntimeId()
 	 * @model default="adf63ddc-debe-4d7e-b899-b936e989439f" dataType="org.eclipse.cmf.occi.core.String" required="true"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://schemas.modmacao.org/openstack/swe/ecore!Ubuntu_trustytahr!openstackRuntimeId'"
 	 * @generated
 	 */
 	String getOpenstackRuntimeId();

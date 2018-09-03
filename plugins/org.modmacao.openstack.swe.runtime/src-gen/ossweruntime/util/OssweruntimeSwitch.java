@@ -158,6 +158,14 @@ public class OssweruntimeSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case OssweruntimePackage.UBUNTU_BIONICBEAVER_PYTHON: {
+				Ubuntu_bionicbeaver_python ubuntu_bionicbeaver_python = (Ubuntu_bionicbeaver_python)theEObject;
+				T result = caseUbuntu_bionicbeaver_python(ubuntu_bionicbeaver_python);
+				if (result == null) result = caseOs_tpl(ubuntu_bionicbeaver_python);
+				if (result == null) result = caseMixinBase(ubuntu_bionicbeaver_python);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -279,6 +287,21 @@ public class OssweruntimeSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseUbuntu_xenialxerus(Ubuntu_xenialxerus object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ubuntu bionicbeaver python</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ubuntu bionicbeaver python</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUbuntu_bionicbeaver_python(Ubuntu_bionicbeaver_python object) {
 		return null;
 	}
 

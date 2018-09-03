@@ -45,6 +45,7 @@ public interface Swe_mem_small extends Mem_small, MixinBase {
 	 * @see #setOpenstackRuntimeId(String)
 	 * @see ossweruntime.OssweruntimePackage#getSwe_mem_small_OpenstackRuntimeId()
 	 * @model default="7ae43f3f-4f39-4855-8a42-8d1f7e26bc0a" dataType="org.eclipse.cmf.occi.core.String" required="true"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='throw new UnsupportedOperationException();  // FIXME Unimplemented http://schemas.modmacao.org/openstack/swe/ecore!Swe_mem_small!openstackRuntimeId'"
 	 * @generated
 	 */
 	String getOpenstackRuntimeId();

@@ -74,6 +74,7 @@ public class OssweruntimeFactoryImpl extends EFactoryImpl implements Ossweruntim
 			case OssweruntimePackage.SWE_MEM_LARGE: return createSwe_mem_large();
 			case OssweruntimePackage.UBUNTU_TRUSTYTAHR: return createUbuntu_trustytahr();
 			case OssweruntimePackage.UBUNTU_XENIALXERUS: return createUbuntu_xenialxerus();
+			case OssweruntimePackage.UBUNTU_BIONICBEAVER_PYTHON: return createUbuntu_bionicbeaver_python();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -157,6 +158,16 @@ public class OssweruntimeFactoryImpl extends EFactoryImpl implements Ossweruntim
 	public Ubuntu_xenialxerus createUbuntu_xenialxerus() {
 		Ubuntu_xenialxerusImpl ubuntu_xenialxerus = new Ubuntu_xenialxerusImpl();
 		return ubuntu_xenialxerus;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Ubuntu_bionicbeaver_python createUbuntu_bionicbeaver_python() {
+		Ubuntu_bionicbeaver_pythonImpl ubuntu_bionicbeaver_python = new Ubuntu_bionicbeaver_pythonImpl();
+		return ubuntu_bionicbeaver_python;
 	}
 
 	/**

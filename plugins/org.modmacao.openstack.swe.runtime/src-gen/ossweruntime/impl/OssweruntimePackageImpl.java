@@ -37,6 +37,7 @@ import ossweruntime.Swe_mem_large;
 import ossweruntime.Swe_mem_medium;
 import ossweruntime.Swe_mem_small;
 import ossweruntime.Swe_small;
+import ossweruntime.Ubuntu_bionicbeaver_python;
 import ossweruntime.Ubuntu_trustytahr;
 import ossweruntime.Ubuntu_xenialxerus;
 
@@ -104,6 +105,13 @@ public class OssweruntimePackageImpl extends EPackageImpl implements Ossweruntim
 	private EClass ubuntu_xenialxerusEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ubuntu_bionicbeaver_pythonEClass = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -131,7 +139,7 @@ public class OssweruntimePackageImpl extends EPackageImpl implements Ossweruntim
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
+	 *
 	 * <p>This method is used to initialize {@link OssweruntimePackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -145,16 +153,14 @@ public class OssweruntimePackageImpl extends EPackageImpl implements Ossweruntim
 		if (isInited) return (OssweruntimePackage)EPackage.Registry.INSTANCE.getEPackage(OssweruntimePackage.eNS_URI);
 
 		// Obtain or create and register package
-		OssweruntimePackageImpl theOssweruntimePackage = (OssweruntimePackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof OssweruntimePackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new OssweruntimePackageImpl());
+		Object registeredOssweruntimePackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		OssweruntimePackageImpl theOssweruntimePackage = registeredOssweruntimePackage instanceof OssweruntimePackageImpl ? (OssweruntimePackageImpl)registeredOssweruntimePackage : new OssweruntimePackageImpl();
 
 		isInited = true;
 
 		// Initialize simple dependencies
 		InfrastructurePackage.eINSTANCE.eClass();
 		CrtpPackage.eINSTANCE.eClass();
-		ModmacaoPackage.eINSTANCE.eClass();
-		PlatformPackage.eINSTANCE.eClass();
-		PlacementPackage.eINSTANCE.eClass();
 		OCCIPackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
@@ -166,7 +172,6 @@ public class OssweruntimePackageImpl extends EPackageImpl implements Ossweruntim
 		// Mark meta-data to indicate it can't be changed
 		theOssweruntimePackage.freeze();
 
-  
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(OssweruntimePackage.eNS_URI, theOssweruntimePackage);
 		return theOssweruntimePackage;
@@ -321,6 +326,24 @@ public class OssweruntimePackageImpl extends EPackageImpl implements Ossweruntim
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getUbuntu_bionicbeaver_python() {
+		return ubuntu_bionicbeaver_pythonEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUbuntu_bionicbeaver_python_OpenstackRuntimeId() {
+		return (EAttribute)ubuntu_bionicbeaver_pythonEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public OssweruntimeFactory getOssweruntimeFactory() {
 		return (OssweruntimeFactory)getEFactoryInstance();
 	}
@@ -367,6 +390,9 @@ public class OssweruntimePackageImpl extends EPackageImpl implements Ossweruntim
 
 		ubuntu_xenialxerusEClass = createEClass(UBUNTU_XENIALXERUS);
 		createEAttribute(ubuntu_xenialxerusEClass, UBUNTU_XENIALXERUS__OPENSTACK_RUNTIME_ID);
+
+		ubuntu_bionicbeaver_pythonEClass = createEClass(UBUNTU_BIONICBEAVER_PYTHON);
+		createEAttribute(ubuntu_bionicbeaver_pythonEClass, UBUNTU_BIONICBEAVER_PYTHON__OPENSTACK_RUNTIME_ID);
 	}
 
 	/**
@@ -418,6 +444,8 @@ public class OssweruntimePackageImpl extends EPackageImpl implements Ossweruntim
 		ubuntu_trustytahrEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 		ubuntu_xenialxerusEClass.getESuperTypes().add(theInfrastructurePackage.getOs_tpl());
 		ubuntu_xenialxerusEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
+		ubuntu_bionicbeaver_pythonEClass.getESuperTypes().add(theInfrastructurePackage.getOs_tpl());
+		ubuntu_bionicbeaver_pythonEClass.getESuperTypes().add(theOCCIPackage.getMixinBase());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(swe_smallEClass, Swe_small.class, "Swe_small", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -444,14 +472,15 @@ public class OssweruntimePackageImpl extends EPackageImpl implements Ossweruntim
 		initEClass(ubuntu_xenialxerusEClass, Ubuntu_xenialxerus.class, "Ubuntu_xenialxerus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getUbuntu_xenialxerus_OpenstackRuntimeId(), theOCCIPackage.getString(), "openstackRuntimeId", "5437eae8-7c47-4834-929c-a314de77d291", 1, 1, Ubuntu_xenialxerus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(ubuntu_bionicbeaver_pythonEClass, Ubuntu_bionicbeaver_python.class, "Ubuntu_bionicbeaver_python", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getUbuntu_bionicbeaver_python_OpenstackRuntimeId(), theOCCIPackage.getString(), "openstackRuntimeId", "e02f6965-0c9e-45e0-9a54-e2730bd05749", 1, 1, Ubuntu_bionicbeaver_python.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		// Create resource
 		createResource(eNS_URI);
 
 		// Create annotations
 		// http://www.eclipse.org/emf/2002/Ecore
 		createEcoreAnnotations();
-		// http://www.eclipse.org/OCL/Import
-		createImportAnnotations();
 	}
 
 	/**
@@ -461,35 +490,11 @@ public class OssweruntimePackageImpl extends EPackageImpl implements Ossweruntim
 	 * @generated
 	 */
 	protected void createEcoreAnnotations() {
-		String source = "http://www.eclipse.org/emf/2002/Ecore";	
+		String source = "http://www.eclipse.org/emf/2002/Ecore";
 		addAnnotation
-		  (this, 
-		   source, 
+		  (this,
+		   source,
 		   new String[] {
-			 "invocationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
-			 "settingDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
-			 "validationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"
-		   });
-	}
-
-	/**
-	 * Initializes the annotations for <b>http://www.eclipse.org/OCL/Import</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void createImportAnnotations() {
-		String source = "http://www.eclipse.org/OCL/Import";	
-		addAnnotation
-		  (this, 
-		   source, 
-		   new String[] {
-			 "occi", "http://schemas.ogf.org/occi/core/ecore",
-			 "infrastructure", "http://schemas.ogf.org/occi/infrastructure/ecore",
-			 "crtp", "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1/ecore",
-			 "modmacao", "http://schemas.modmacao.org/modmacao/ecore",
-			 "platform", "http://schemas.modmacao.org/occi/platform/ecore",
-			 "placement", "http://schemas.modmacao.org/placement/ecore"
 		   });
 	}
 

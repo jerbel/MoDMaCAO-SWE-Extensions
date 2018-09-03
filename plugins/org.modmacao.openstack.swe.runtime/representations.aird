@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:occi="http://schemas.ogf.org/occi/core/ecore" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis xmi:id="_Ma_x8CuBEeiZ5toy17Eilg" selectedViews="_MfWGcCuBEeiZ5toy17Eilg _iN2vYCuDEeiZ5toy17Eilg" version="12.1.0.201708031200">
+  <viewpoint:DAnalysis xmi:id="_Ma_x8CuBEeiZ5toy17Eilg" selectedViews="_MfWGcCuBEeiZ5toy17Eilg _iN2vYCuDEeiZ5toy17Eilg" version="13.0.0.201804031646">
     <semanticResources>model/ossweruntime.occie</semanticResources>
     <semanticResources>http://schemas.ogf.org/occi/core</semanticResources>
     <semanticResources>http://schemas.ogf.org/occi/infrastructure</semanticResources>
@@ -24,7 +24,8 @@
     <semanticResources>platform:/resource/org.modmacao.core/model/modmacao.ecore</semanticResources>
     <semanticResources>platform:/resource/org.modmacao.occi.platform/model/platform.ecore</semanticResources>
     <semanticResources>platform:/resource/org.modmacao.placement/model/placement.ecore</semanticResources>
-    <semanticResources>model/ossweruntime.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.modmacao.occi.platform/model/platform.genmodel</semanticResources>
+    <semanticResources>platform:/plugin/org.modmacao.occi.platform/model/platform.ecore</semanticResources>
     <semanticResources>model/ossweruntime.genmodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_MfWGcCuBEeiZ5toy17Eilg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.cmf.occi.core.design/description/OCCIware.odesign#//@ownedViewpoints[name='OCCI%20Extension']"/>
